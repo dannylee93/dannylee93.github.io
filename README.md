@@ -1,37 +1,79 @@
-## Welcome to GitHub Pages
+# Cause
 
-You can use the [editor on GitHub](https://github.com/dannylee93/dannylee93.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+Not for profit themed template for Jekyll. Browse through a [live demo](https://clean-oryx.cloudvent.net/).
+Increase the web presence of a not for profit or cause website with this configurable theme.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+![Cause](images/_screenshot.jpg)
 
-### Markdown
+CloudCannon was made by [CloudCannon](http://cloudcannon.com/), the Cloud CMS for Jekyll.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Find more templates, themes and step-by-step Jekyll tutorials at [CloudCannon Academy](https://learn.cloudcannon.com/).
 
-```markdown
-Syntax highlighted code block
+## Features
 
-# Header 1
-## Header 2
-### Header 3
+* Pre-built pages
+* Pre-styled components
+* Configurable footer
+* Optimised for editing in [CloudCannon](http://cloudcannon.com/)
+* SEO tags
+* Google Analytics
+* [Donorbox](https://donorbox.org/)
+* [MailChimp](https://mailchimp.com/)
 
-- Bulleted
-- List
+## Setup
 
-1. Numbered
-2. List
+1. Add your site details in `_config.yml`.
+2. Add your Google Analytics to `_config.yml`.
+3. Get a workflow going to see your site's output (with [CloudCannon](https://app.cloudcannon.com/) or Jekyll locally).
 
-**Bold** and _Italic_ and `Code` text
+## Develop
 
-[Link](url) and ![Image](src)
-```
+Cause was built with [Jekyll](http://jekyllrb.com/) version 3.3.1, but should support newer versions as well.
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+Install the dependencies with [Bundler](http://bundler.io/):
 
-### Jekyll Themes
+~~~bash
+$ bundle install
+~~~
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/dannylee93/dannylee93.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+Run `jekyll` commands through Bundler to ensure you're using the right versions:
 
-### Support or Contact
+~~~bash
+$ bundle exec jekyll serve
+~~~
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+## Editing
+
+Cause is already optimised for updating pages, company details and footer elements in CloudCannon.
+
+## SEO Tag
+
+This site uses the [jekyll-seo-tag](https://github.com/jekyll/jekyll-seo-tag) plugin. You should at least set a title in front matter on each page. Have a look at the [project page](https://github.com/jekyll/jekyll-seo-tag) for more options.
+
+## Google Analytics
+
+[Google Analytics](https://www.google.com/analytics/) is a third party website analytics tool. To install:
+1. Add your Google Analytics key to `_config.yml`
+2. Run your site in production `JEKYLL_ENV=production`. This is the default in CloudCannon and GitHub Pages.
+
+## Donorbox
+
+[Donorbox](https://donorbox.org/) is a third party embeddable donation form for websites. To install:
+
+1. Set up a campaign on Donorbox
+2. Copy the embed code from the Dashboard screen
+3. Paste it into `donation_embed` in `_config.yml`
+
+## Mailchimp
+
+[Mailchimp](https://mailchimp.com/) is a third party embeddable newsletter for websites. To install:
+
+1. Set up a campaign on Mailchimp
+2. Find the embed code for the sign up form
+3. Copy the `<form>`'s action url
+4. Paste it into `newsletter_action` in `_config.yml`
+
+### Company details
+
+* Reused around the site to save multiple editing locations.
+* Set in the *Data* / *Company* section.
